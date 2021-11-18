@@ -1,26 +1,23 @@
 import React from "react";
-import styled from "styled-components";
+import { Link} from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
+import { UnorderedList, ListItem, NavContainer } from "../Styled/Styles.styled";
+import { getNavBar } from "../Provider/Themes/navBar";
 
-const UnorderedList = styled.ul`
-  list-style-type: none;
-  display: flex;
-  margin-left:-16px;
-`;
-const ListItem = styled.li`
-  color: ${({ theme }) => theme.colors.text.navLinks};
-  padding-inline: 0.7rem;
-`;
+const NavBar = () => {
+  let navBarLinks = getNavBar();
 
-
-const NavBar = ({ element }) => {
   return (
-    <UnorderedList>
-      <ListItem>{element.home}</ListItem>
-      <ListItem>{element.events}</ListItem>
-      <ListItem>{element.contact}</ListItem>
-      <ListItem>{element.art}</ListItem>
-    </UnorderedList>
-  )
-}
+    
+      <UnorderedList marginLeft="15rem" family="'Barrio'" size="1.2rem">
+        {navBarLinks.map((item) => (
+          <Link key={uuidv4()} to={`/${item.navname}`}><ListItem>
+            {item.navname}
+          </ListItem></Link>
+        ))}
+      </UnorderedList>
+   
+  );
+};
 
 export default NavBar;
