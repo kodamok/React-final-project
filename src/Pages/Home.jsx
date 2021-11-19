@@ -3,9 +3,11 @@ import { Container, Imagecontainer } from "../Styled/Styles.styled";
 import abyayalaLogo  from "../resources/background/abyayalaLogo.jpeg"
 
 const Home = () => {
+
+  const logo =abyayalaLogo
   return (
-<Container justify="center" >
-<Imagecontainer src={abyayalaLogo}  alt="Logo" width="880px" border="none" />
+<Container justify="center" height="700px" >
+<Imagecontainer src={logo}  alt="Logo" width="880px" height="700px" border="none" />
 </Container>
   )
 }

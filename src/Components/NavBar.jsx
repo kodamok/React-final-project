@@ -9,7 +9,7 @@ const NavBar = () => {
 
   return (
     
-      <UnorderedList marginLeft="15rem" family="'Barrio'" size="1.2rem">
+      <UnorderedList marginLeft="1rem" family="'Barrio'" size="1.2rem">
         {navBarLinks.map((item) => (
           <Link key={uuidv4()} to={`/${item.navname}`}><ListItem>
             {item.navname}

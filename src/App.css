@@ -1,0 +1,83 @@
+input[type=text] {
+  -webkit-appearence: none;
+  -moz-appearance: none;
+  height: 50px;
+  font-family: inherit;
+ 
+  border: 4px solid  #51050F;
+  border-radius:10px;
+  margin-bottom:.5rem;
+  outline: none;
+  
+
+}
+
+
+
+input[type=password] {
+  -webkit-appearence: none;
+  -moz-appearance: none;
+  height: 50px;
+  
+  border: 4px solid  #51050F;
+  border-radius:10px;
+  margin-bottom:.5rem;
+  outline: none;
+  
+
+}
+
+::placeholder  {
+  color: #F5C6A5;
+  font-size: 1.5em;
+padding:1rem;
+
+
+}
+
+
+input:focus{
+    border:#F78812
+}
+
+textarea:focus{
+    border: #F78812;
+}
+
+
+label{
+    font-family: 'Barriecito';
+    border-radius:10px;
+    margin-bottom:.5rem;
+    text-decoration: underline;
+    font-size: 1.4rem;
+}
+
+textarea{
+    -webkit-appearence: none;
+  -moz-appearance: none;
+    border-radius:10px;
+    outline: none;
+    border:4px solid  #51050F;
+    font-family: sans-serif;
+
+}
+
+
+button{
+  font-family: 'Barriecito';
+    border-radius:10px;
+    height:70px;
+    margin-bottom:.5rem;
+    text-decoration: underline;
+    border:3px solid #F5C6A5;
+    background:#51050F;
+    color:#F5C6A5;
+
+
+}
+
+button:hover{
+  color:#51050F;
+  background:#F5C6A5;
+}

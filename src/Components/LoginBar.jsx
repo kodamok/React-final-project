@@ -1,26 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { v4 as uuidv4 } from "uuid";
-import { getNavBar } from "../Provider/Themes/navBar";
+import styled from "styled-components";
 import { UnorderedList, ListItem, Container } from "../Styled/Styles.styled";
 
 const LoginBar = () => {
-  let navBarLinks = getNavBar();
+  const [login, setLogin] = useState(false);
+  const showLogIn = () => setLogin(!login);
+
+  const [signIn, setSignin] = useState(false);
+  const showSignIn = () => setSignin(!signIn);
 
   return (
-   
-      <UnorderedList marginRight="15rem" size="1.2rem" family="'Barrio'">
-        {navBarLinks.map((item) => (
-          <Link key={uuidv4()} to={`/${item.logname}`}>
-            <ListItem>{item.logname}</ListItem>
-          </Link>
-           
-        ))}
-
-        
-       
+    <Container border="none">
+      <UnorderedList marginRight="1rem" size="1.2rem" family="'Barrio'">
+        <Link to="/#">
+          <ListItem onClick={() => showLogIn}>LogIn</ListItem>
+        </Link>
+        <Link to="/#">
+          <ListItem onClick={() => showSignIn}>SignIn</ListItem>
+        </Link>
       </UnorderedList>
-   
+      <Container border="none">
+        {login === true ? (
+          setSignin(false)
+        ) : (
+          <form>
+            <input type="text" placeholder="UserName" />
+            <input type="password" placeholder="password" />
+          </form>
+        )}
+      </Container>
+
+      <Container border="none">
+        {signIn === true ? (
+          setLogin(false)
+        ) : (
+          <form>
+            <input type="text" placeholder="UserName" />
+            <input type="password" placeholder="password" />
+          </form>
+        )}
+      </Container>
+    </Container>
   );
 };
 

@@ -6,6 +6,7 @@ export const Container = styled.div`
   height: ${({height}) => height};
   aspect-radio: ${({radio}) => radio};
   border: 2px solid ${({ color }) => color};
+  border:${({border}) => border};
   display: flex;
   flex-direction: ${({direction}) => direction};
   flex-wrap: ${({wrap}) => wrap};
@@ -15,7 +16,8 @@ export const Container = styled.div`
   padding:${({padding}) => padding};
   align-content:${({content}) => content};
   background-color:${({background}) => background};
-  border-radius:${({radius}) => radius}
+  border-radius:${({radius}) => radius};
+  
 
 
 `;
@@ -24,6 +26,7 @@ export const HeaderContainer = styled.header`
   width: ${({ width }) => width};
   border-bottom: 2px solid ${({theme}) => theme.colors.text.navLinks};
   display: flex;
+  flex-wrap: ${({wrap}) => wrap};
   justify-content: ${({ justify }) => justify};
   margin-right:${({marginRight}) => marginRight};
   margin-left: ${({marginLeft}) => marginLeft};
@@ -74,7 +77,7 @@ export const FooterContactInfoLeft = styled.div`
   width: ${({ width }) => width};
   justify-content: ${({ flex }) => flex};
   align-items: ${({ align }) => align};
-  margin-left:15rem;
+  margin-left:1rem;
 `;
 
 export const FooterImgLogo = styled.img`

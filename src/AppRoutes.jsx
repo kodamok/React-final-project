@@ -10,6 +10,7 @@ import { defaultTheme } from "./Provider/Themes/cssThemes";
 import GlobalStyles from "./Styled/GlobalStyles";
 import { MainContainer } from "./Styled/MainContainer.styled";
 import MyProvider from "./Provider/MyContext/MyProvider";
+import "../src/App.css"
 
 import Home from "./Pages/Home";
 import Events from "./Pages/Events"
@@ -32,7 +33,7 @@ const AppRoutes = () => {
             <Header />
           <Routes>
             
-              <Route path="/home" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/art" element={<Art />} />
               <Route path="/productDetailsPage" element={<ProductDetailsPage />} />
               <Route path="/contact" element={<Contact/>} />

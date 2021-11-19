@@ -10,7 +10,7 @@ import {Container, H1Container, } from "../Styled/Styles.styled"
 const Contact = ( )=> {
 
     return (
-        <Container color ="white" justify="center">
+        <Container justify="center">
         <Form />
 
         </Container>

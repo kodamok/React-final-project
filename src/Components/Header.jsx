@@ -15,10 +15,9 @@ const LoginItems = navBar.map((item, index) => {
 
 const Header = () => {
   return (
-    <HeaderContainer flex="space-between" justify="space-between" >
+    <HeaderContainer wrap="wrap" justify="space-between" >
        <NavBar/>
        <LoginBar/>
-       {console.log(LoginBar())}
     </HeaderContainer>
   );
 };
