@@ -17,9 +17,7 @@ export const Container = styled.div`
   align-content:${({content}) => content};
   background-color:${({background}) => background};
   border-radius:${({radius}) => radius};
-  
-
-
+  max-height:${({max}) => max};
 `;
 
 export const HeaderContainer = styled.header`
@@ -28,6 +26,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   flex-wrap: ${({wrap}) => wrap};
   justify-content: ${({ justify }) => justify};
+  align-items: ${({align}) => align};
   margin-right:${({marginRight}) => marginRight};
   margin-left: ${({marginLeft}) => marginLeft};
   background: ${({theme}) => theme.colors.background.bgHeader};
@@ -55,8 +54,8 @@ export const ListItem = styled.li`
   padding-inline: 0.7rem;
   font-family: ${({family}) => family};
   font-size: ${({size}) => size};
-  height:${({height}) => height}
-
+  height:${({height}) => height};
+  cursor: pointer
  
 `;
 
@@ -109,6 +108,7 @@ font-size: ${({size}) => size};
 font-Weight: ${({weight}) => weight};
 text-align: ${({align}) => align};
 line-height: ${({height}) => height};
+margin:${({margin}) => margin};
 
 `
 
@@ -153,6 +153,12 @@ border: 2px solid ${({border, theme}) => border ? border : theme.colors.text.h1}
 export const Button = styled.button`
 border: 2px solid ${({border, theme}) => border ? border : theme.colors.text.navLinks };
 border-radius: ${({radius}) => radius};
-margin: ${({margin}) => margin}
+text-decoration:${({underline}) => underline};
+margin: ${({margin}) => margin};
+height:${({height}) => height};
+cursor:pointer;
+align-self:${({self}) => self};
+
 
 `
+

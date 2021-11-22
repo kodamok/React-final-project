@@ -12,17 +12,19 @@ const Form = () => {
         <H1Container decoration="underline">Contact</H1Container>
       </Container>
     
-    <Container direction="column" border="8px solid #51050F" background="#F78812" width="500px" height="700px" radius="10%" padding="3rem" margin ="2rem">
-      <label type="text">Full Name:</label>
-      <input type ="text" placeholder="full name"></input>
-      <label id="input">Email:</label>
-      <input type ="text" placeholder="password"></input>
-      <label>Please tell us how can we help you:</label>
-      <textarea placeholder="full name" rows="30"></textarea>
+    <form action="">
+      <Container direction="column" border="8px solid #51050F" background="#F78812" width="700px" height="800px" radius="10%" padding="3rem" margin ="2rem">
+        <label type="text">Full Name:</label>
+        <input type ="text" placeholder="Full Name"></input>
+        <label id="input">Email:</label>
+        <input type ="text" placeholder="Email"></input>
+        <label>Please tell us how can we help you:</label>
+        <textarea placeholder="Text Area" rows="20"></textarea>
       
-      <button>Submit</button>
-    
-    </Container>
+        <button>Submit</button>
+      
+      </Container>
+    </form>
     
     </Container>
   );

@@ -5,6 +5,7 @@ const headerBar = [
   { navname: "Events" },
   { navname: "Art" },
   { navname: "Contact" },
+  { navname: "Kart" },
   {
     logname: "Login",
   },

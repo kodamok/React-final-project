@@ -15,6 +15,7 @@ import "../src/App.css"
 import Home from "./Pages/Home";
 import Events from "./Pages/Events"
 import Contact from "./Pages/Contact"
+import User from "./Pages/User"
 import Art from "./Pages/Art"
 import ProductDetailsPage from "./Pages/ProductDetailsPage";
 import Kart from "./Pages/Kart"
@@ -33,10 +34,13 @@ const AppRoutes = () => {
             <Header />
           <Routes>
             
-              <Route path="/" element={<Home />} />
+              <Route path="/Home" element={<Home />} />
               <Route path="/art" element={<Art />} />
               <Route path="/productDetailsPage" element={<ProductDetailsPage />} />
               <Route path="/contact" element={<Contact/>} />
+              <Route path="/kart" element={<Kart/>} />
+              <Route path="/events" element={<Events/>} />
+              <Route path="/currentUser" element={<User/>} />
             
           </Routes>
           <Footer />
