@@ -1,0 +1,73 @@
+input[type="text"] {
+  -webkit-appearence: none;
+  -moz-appearance: none;
+  height: 45px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  border: 1px solid #51050f;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  outline: none;
+  padding-left: 1.2rem;
+}
+
+input[type="password"] {
+  -webkit-appearence: none;
+  -moz-appearance: none;
+  height: 45px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  border: 1px solid #51050f;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+  outline: none;
+}
+
+::placeholder {
+  color: #f5c6a5;
+  font-size: 1.5em;
+  padding: 1rem;
+}
+
+label {
+  font-family: "Barriecito";
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+  font-size: 1.4rem;
+}
+
+textarea {
+  -webkit-appearence: none;
+  -moz-appearance: none;
+  border-radius: 10px;
+  outline: none;
+
+  font-family: sans-serif;
+}
+
+button {
+  font-family: "Barriecito";
+  border-radius: 10px;
+  height: 70px;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+  border: 3px solid #f5c6a5;
+  background: #51050f;
+  color: #f5c6a5;
+}
+
+button:hover {
+  color: #51050f;
+  background: #f5c6a5;
+  border: 2px solid #51050f;
+}
+
+input:focus {
+  border: 3px solid #51050f;
+}
+
+textarea:focus {
+  border: 3px solid #51050f;
+}

@@ -1,22 +1,30 @@
 import { createGlobalStyle } from "styled-components"
 
-const GlobalStyles = createGlobalStyle`
 
+const GlobalStyles = createGlobalStyle
 
-html {font-size: 100%;} /*16px*/
+`html {font-size: 100%;} /*16px*/
+
+*{
+  box-sizing: border-box;
+  
+}
 
 body {
   background: ${({theme})=> theme.colors.background.bgBody };
-  font-family: 'Barrio', sans-serif;
+  font-family: 'Barriecito', cursive;
+  font-family: 'Barrio', cursive;
+  font-family: 'Inconsolata', monospace;
   font-weight: 400;
   line-height: 1.75;
   color: #000000;
+
 }
 
 p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 {
-  margin: 3rem 0 1.38rem;
+  margin: .3rem 0 1.38rem;
   font-family: 'Barrio', sans-serif;
   font-weight: 400;
   line-height: 1.3;
@@ -37,7 +45,21 @@ h5 {font-size: 1.25rem;}
 
 small, .text_small {font-size: 0.8rem;}
 
+
+a:link{
+  text-decoration: none
+}
+
+a:hover{
+  text-decoration:none
+}
+
 `
+
+
+
+
+
 
 
 export default GlobalStyles
