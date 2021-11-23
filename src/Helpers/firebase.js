@@ -16,12 +16,12 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDFHhWwlGe9azjwdorFPXKGufHu3k2pa3k",
-  authDomain: "abyayala-libre-project.firebaseapp.com",
-  projectId: "abyayala-libre-project",
-  storageBucket: "abyayala-libre-project.appspot.com",
-  messagingSenderId: "703059215796",
-  appId: "1:703059215796:web:4c37a1b146683e1b5b1ee1",
+  apiKey: ,
+  authDomain: ,
+  projectId: ,
+  storageBucket: ,
+  messagingSenderId:,
+  appId: ,
 };
 
 // Initialize Firebase
