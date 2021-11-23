@@ -158,6 +158,7 @@ margin: ${({margin}) => margin};
 height:${({height}) => height};
 cursor:pointer;
 align-self:${({self}) => self};
+padding:${({padding}) => padding}
 
 
 `

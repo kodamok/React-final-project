@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { useNavigate } from "react-router";
+import {useNavigate } from "react-router";
 import "../App.css";
 import MyContext from "../Provider/MyContext/MyContext";
 import {
@@ -13,6 +13,7 @@ const LoginBar = () => {
   
 //USE NAVIGATE
 let navigate = useNavigate()
+
 
 
 
@@ -97,6 +98,7 @@ let navigate = useNavigate()
           margin="0 1rem 0 0"
           disabled={loading || !currentUser}
           onClick={handleLogOut}
+        
         >
           LogOut
         </Button> : null}
