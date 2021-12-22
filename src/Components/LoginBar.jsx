@@ -49,17 +49,17 @@ let navigate = useNavigate()
 
 
   return (
-    <Container border="none" align="center">
+    <Container border="none" align="center" padding="0 45px 0 0">
       {currentUser ? <ParagraphContainer margin="0 1rem 0 0">Currently logged in as: {currentUser?.email}</ParagraphContainer> : null}
       <Container marginRight="1rem" size="1.2rem" family="'Barrio'" justify="center" border="none">
         {signIn === !true && (
-          <Button height="45px" underline="none" onClick={showLogIn} margin="0 1rem 0 0">
+          <Button underline="none" onClick={showLogIn} >
             LogIn
           </Button>
         )}
 
         {login === !true && (
-          <Button height="45px" underline="none" onClick={showSignIn} margin="0 1rem 0 0" onSubmit={() =>navigate('/currentUser')}>
+          <Button underline="none" onClick={showSignIn}  onSubmit={() =>navigate('/currentUser')}>
             SignIn
           </Button>
         )}
@@ -69,7 +69,7 @@ let navigate = useNavigate()
             <input ref={emailRef} type="text" placeholder="Email" />
             <input ref={passwordRef} type="password" placeholder="password" />
             <Button
-              height="45px"
+              height="40px"
               margin="0 .5rem 0 .5rem"
               disabled={loading || currentUser}
               onClick={handleLogIn}
@@ -94,7 +94,7 @@ let navigate = useNavigate()
         )}
         {currentUser ? <Button
           
-          height="45px"
+          height="40px"
           margin="0 1rem 0 0"
           disabled={loading || !currentUser}
           onClick={handleLogOut}

@@ -127,6 +127,8 @@ font-size: ${({size}) => size};
 text-align: ${({align}) => align};
 text-decoration: ${({decoration}) => decoration};
 margin:${({margin}) => margin};
+padding:${({padding}) => padding};
+
 `
 
 
@@ -152,13 +154,17 @@ border: 2px solid ${({border, theme}) => border ? border : theme.colors.text.h1}
 
 export const Button = styled.button`
 border: 2px solid ${({border, theme}) => border ? border : theme.colors.text.navLinks };
-border-radius: ${({radius}) => radius};
+border-radius: 5px;
 text-decoration:${({underline}) => underline};
-margin: ${({margin}) => margin};
-height:${({height}) => height};
+
+margin-left:20px;
+height:40px;
 cursor:pointer;
 align-self:${({self}) => self};
-padding:${({padding}) => padding}
+padding:${({padding}) => padding};
+width:90px;
+font-size:1.2rem;
+font-family: barrio;
 
 
 `

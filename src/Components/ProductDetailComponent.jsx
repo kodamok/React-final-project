@@ -81,7 +81,7 @@ const ProductDetailComponent = ({ theOneAndOnly }) => {
             >
               -
             </Button>
-            <H2Container margin="0">{theOneAndOnly.quantity}</H2Container>
+            <H2Container padding="0 0 0 1rem">{theOneAndOnly.quantity}</H2Container>
             <Button
               height="70px"
               margin=".5rem"
