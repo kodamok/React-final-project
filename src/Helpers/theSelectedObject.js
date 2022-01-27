@@ -1,3 +1,8 @@
+// HERE THIS FUNCTION SELECTS A SPECFIC OBJECT SELCTED 
+// BY THE USER IN ORDER TO EXTACT THE NECESSARY INFORMATION
+// THIS FUNCTION INTERACTS WITH THE OTHER FUNCTIONS
+// SO I CAN POPULATE THE KART
+
 const specificObject = function onlyTheObject(input, id) {
   let object;
   let getArrayWithItem = input.filter((selectedItem) => selectedItem.id === id);

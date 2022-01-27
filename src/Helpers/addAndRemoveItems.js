@@ -1,3 +1,6 @@
+// HERE I CRATED A FUNCTION THAT AD AND REMOVES ITEMS FROM THE KART
+// 
+
 const addRemoveFromKart = (valueOfButton, poster, kartItems, setKartItems) => {
   let copyKartItems;
 

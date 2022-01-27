@@ -1,3 +1,7 @@
+// hERE I CRATED A FIREBASE ACCOUNT IN ORER TO ADMINISTRATE LOG INS 
+// FOR DEMOSTRATION POURPUSES
+
+
 import { useEffect, useState } from "react";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";

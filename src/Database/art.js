@@ -1,4 +1,4 @@
-
+// FAKE DATA BASE POPULATION
 
 const feministArt = [
     {id:1, price:'25', title: 'Dont Let Racism Divide Us', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Felis imperdiet proin fermentum leo vel orci porta non. Nisi est sit amet facilisis magna. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Urna porttitor rhoncus dolor purus non enim praesent. Orci sagittis eu volutpat odio facilisis. Praesent tristique magna sit amet. Arcu bibendum at varius vel pharetra vel. Fringilla ut morbi tincidunt augue interdum velit euismod in. A diam maecenas sed enim ut sem viverra aliquet. Donec ac odio tempor orci.', image:require("../resources/artWork/dontLetRacismDivideUs.jpg").default, artistName:'francisca ribeiro', artistLink: 'http://www.sondfoinfd.com'},
